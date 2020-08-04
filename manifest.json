@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "GitHub Network Forks",
+  "version": "1.0",
+
+  "description": "Changes all GitHub fork links to GitHub network links",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*", "*://*.github.io/*"],
+      "js": ["changelinks.js"]
+    }
+  ]
+
+}
